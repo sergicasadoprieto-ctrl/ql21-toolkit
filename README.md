@@ -1,9 +1,27 @@
-# QL21 Toolkit
+# 📓 QL21 Toolkit
 
-> A documentation framework for experimental research.
+> A practical documentation framework for experimental research. Designed for immediate use in lab environments.
 
-Work in progress. Full release coming soon.
+**Author:** Sergi Casado Prieto · IMB-CNM-CSIC / UAB · 2026
 
-**Author:** Sergi Casado Prieto
-**Institution:** IMB-CNM-CSIC / UAB
-**Year:** 2026
+---
+
+## What is included
+
+- Guide of Best Practices (PDF)
+- Four reusable document templates
+- Survey findings
+
+---
+
+## How to use
+
+Download ZIP or clone:
+
+```bash
+git clone https://github.com/sergicasadoprieto-ctrl/ql21-toolkit.git
+```
+
+---
+
+*QL21 · IMB-CNM-CSIC / UAB · 2026*
