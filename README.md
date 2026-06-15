@@ -42,7 +42,7 @@ ql21-toolkit/
 - Mean reproducibility difficulty: **3.08 / 5**
 - Would adopt structured templates: **68.4%**
 
-Full results in `survey-insights.pdf`.
+Full results in [survey-insights.md](survey-insights.md)
 
 ---
 
