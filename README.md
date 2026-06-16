@@ -1,6 +1,6 @@
 # 📓 QL21 Toolkit — The 21st Century Lab Notebook
 
-> A practical documentation framework for experimental research. Free and ready to use from day one.
+> QL21 was developed as part of a Bachelor's Thesis at IMB-CNM-CSIC and the Universitat Autònoma de Barcelona, motivated by the practical documentation challenges encountered in experimental research environments.
 
 ![License](https://img.shields.io/badge/license-CC--BY--4.0-F57C00?style=flat-square)
 ![Institution](https://img.shields.io/badge/IMB--CNM-CSIC-263238?style=flat-square)
@@ -14,7 +14,7 @@
 
 ## What is this?
 
-Modern experimental research suffers from a persistent problem: scientists know how to run experiments, but rarely document them well. As a result, knowledge is often lost, and reproducing past results becomes difficult.
+During the survey and literature review carried out for this project, one issue appeared repeatedly: researchers often develop effective experimental workflows, but the documentation supporting those workflows is frequently incomplete or inconsistent.
 
 **QL21** addresses that gap with a practical, reusable documentation framework informed by a survey of 113 researchers at UAB Campus.
 
