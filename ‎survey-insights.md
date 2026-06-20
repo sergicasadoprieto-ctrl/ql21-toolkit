@@ -1,5 +1,5 @@
-# QL21 — Survey Insights
-## The 21st Century Lab Notebook — Research Findings
+# QL21 - Survey Insights
+## The 21st Century Lab Notebook - Research Findings
 
 > Thank you for participating in this survey. Here are the key findings from the 113 responses collected across UAB Campus research groups in May 2026.
 
