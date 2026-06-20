@@ -56,14 +56,27 @@ Full results in [survey-insights.md](survey-insights.md)
 
 ## How to use
 
-**New to QL21?** Start with the [Quick Start Guide](docs/QL21-quick-start-guide.pdf).
+**New to QL21?**   
+Start with the [Quick Start Guide](docs/QL21-quick-start-guide.pdf).  
 For the full documentation framework, see the [Guide of Best Practices](docs/D4-best-practices-guide.pdf).
 
-**Without Git:** Download ZIP above.
+**Without Git:** Download ZIP above.  
 **With Git:**
 ```bash
 git clone https://github.com/sergicasadoprieto-ctrl/ql21-toolkit.git
 ```
+
+---
+## Using with institutional systems
+
+This toolkit is designed for Git-based workflows. If your institution uses a self-hosted Git server (GitLab, Gitea, or similar), redirect the remote after cloning:
+
+```bash
+git remote set-url origin https://your-institution-server/your project.git
+git push -u origin main
+```
+
+If your institution uses a document management system such as OpenText or SharePoint, these platforms serve a different purpose than Git and can coexist. Use Git for daily documentation and traceability, and export final deliverables to your institutional system when required for formal approval or archival.
 
 ---
 

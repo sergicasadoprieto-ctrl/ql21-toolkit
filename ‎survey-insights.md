@@ -85,5 +85,5 @@ https://github.com/sergicasadoprieto-ctrl/ql21-toolkit
 
 ---
 
-*QL21 · IMB-CNM-CSIC / UAB · 2026*
+*KM-TFG-QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & UAB*
 *Full research available upon request.*
