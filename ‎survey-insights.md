@@ -80,6 +80,9 @@ These findings informed the design priorities of the QL21 framework and its asso
 
 The templates and accompanying guide were developed to address several recurring issues identified in the survey, including file organisation, metadata capture, and traceability through version control (Git-based workflows).
 
+An interactive visual summary of these findings is also available at:  
+https://sergicasadoprieto-ctrl.github.io/ql21-toolkit/
+
 Download the full toolkit at:
 https://github.com/sergicasadoprieto-ctrl/ql21-toolkit
 
