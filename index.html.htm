@@ -1,0 +1,296 @@
+<!-- 
+Survey Dashboard - TFG 2026
+  
+Objective:
+Develop a static web-based dashboard to visualise survey data and demonstrate the use of GitHub Pages as a lightweight deployment solution.
+
+
+Technologies:
+- HTML for strucutre
+- CSS for desing 
+- JavaScript for graphics 
+- Chart.js for visualisation
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<!-- Responsive design: ensures correct rendering on mobile and desktop devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Survey Dashboard</title>
+    	<!-- Chart.js s'utilitza perquè permet crear gràfics interactius sense backend i facilita la visualització ràpida de dades quantitatives -->
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+    
+    	<!-- Google Fonts: DM Sans: Read the text and DM Serif Display: Titles-->
+    	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'DM Sans', sans-serif;
+            background: #F1EFE8;
+            color: #2C2C2A;
+        }
+    
+        header {
+            background: white;
+            padding: 20px;
+            border-bottom: 1px solid #D3D1C7;
+            position: sticky;
+            top: 0;
+        }
+
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            margin: 0;
+        }
+    
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 4px 0 0 0;
+            color: #666;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #D3D1C7;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        @media (max-width: 700px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Survey Dashboard</h1>
+        <h2>113 participants</h2>
+    </header>
+
+    <main>
+
+    <!-- Difficulty -->
+    <div class="card">
+        <div class="title">How hard is it to reproduce past experiments?</div>
+        <canvas id="c1"></canvas>
+    </div>
+
+    <!-- Grid 1: User Profile -->
+    <div class="grid">
+
+        <!-- Who? -->
+        <div class="card">
+            <div class="title">Who participated?</div>
+            <canvas id="c2"></canvas>
+        </div>
+
+        <!-- Current tools used -->
+        <div class="card">
+            <div class="title">Current documentation tools</div>
+            <canvas id="c3"></canvas>
+        </div>
+
+    </div>
+
+    <!-- Grid 2: Habits and nightmares -->
+    <div class="grid">
+
+        <!-- When?-->
+        <div class="card">
+            <div class="title">Documentation timing</div>
+            <canvas id="c4"></canvas>
+        </div>
+
+        <!-- Nightmares -->
+        <div class="card">
+            <div class="title">Biggest documentation nightmares</div>
+            <canvas id="c5"></canvas>
+        </div>
+
+    </div>
+
+    <!-- Grid 3: Adoption to new techn -->
+    <div class="grid">
+
+        <!-- Template Adoption -->
+        <div class="card">
+            <div class="title">Template adoption willingness</div>
+            <canvas id="c6"></canvas>
+        </div>
+
+        <!-- Funcionalities -->
+        <div class="card">
+            <div class="title">What researchers actually need</div>
+            <canvas id="c7"></canvas>
+        </div>
+
+    </div>
+
+    </main>
+
+<script>
+
+/* Graphic 1 - Reproduce past experiments */ 
+new Chart(document.getElementById('c1'), {
+  type: 'bar',
+  data: {
+    labels: ['1 - Very Easy', '2', '3', '4', '5 - Impossible'],
+        datasets: [{
+            data: [2, 26, 47, 37, 1],
+            backgroundColor: ['#85B7EB', '#5DCAA5', '#EF9F27', '#D85A30','#E24B4A']
+    }]
+  },
+    options: {
+        plugins: {
+        legend: {
+            display: false
+      }
+    }
+  }
+});
+
+/* Graphic 2 - Profile (anonym) */
+new Chart(document.getElementById('c2'), {
+    type: 'bar',
+    data: {
+    labels: ['Senior Researcher', 'Research Group Leader', 'PhD Student', 'Postdoctoral Researcher', 'Engineer / Technical Staff', 'Project Manager', 'Undergraduate Student'],
+    datasets: [{
+      data: [33, 27, 24, 13, 10, 5, 1],
+      backgroundColor: '#378ADD'
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    plugins: {
+      legend: {
+        display: false
+      }
+    }
+  }
+});
+
+/* Graphic 3 - Tools */
+new Chart(document.getElementById('c3'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Microsoft Word / OneNote', 'Physical paper notebook', 'Digital tools (Notion, Obsidian...)', 'Files', 'Other'],
+    datasets: [{
+      data: [44, 44, 11, 8, 6],
+      backgroundColor: ['#378ADD', '#1D9E75', '#EF9F27', '#D85A30', '#888']
+    }]
+  }
+});
+
+/* Graphic 4 - Timing */
+new Chart(document.getElementById('c4'), {
+  type: 'bar',
+  data: {
+    labels: ['In real-time (inside the lab)', 'Once a week', 'At the end of the day', 'Other'],
+    datasets: [{
+      data: [65, 24, 18, 6],
+      backgroundColor: ['#1D9E75', '#E24B4A', '#EF9F27', '#888780']
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    plugins: {
+      legend: {
+        display: false
+      }
+    }
+  }
+});
+
+/* Graphic 5 - Problems */
+new Chart(document.getElementById('c5'), {
+  type: 'bar',
+  data: {
+    labels: ['Naming hell (final_result_v2)', 'Data in personal laptops', 'Missing metadata', 'Unreadable handwriting', 'Lack of time/energy'],
+    datasets: [{
+      data: [76, 72, 68, 50, 33],
+      backgroundColor: ['#993C1D', '#D85A30', '#F0997B', '#F5C4B3', '#FAECE7']
+      }]
+  },
+  options: {
+    indexAxis: 'y',
+    plugins: {
+      legend: {
+        display: false
+      }
+    }
+  }
+});
+
+/* Graphic 6 - Adoption */
+new Chart(document.getElementById('c6'), {
+  type: 'bar',
+  data: {
+    labels: ['Yes, if it saves me time', 'Maybe, used to current way', 'No, too unique'],
+    datasets: [{
+      data: [80, 30, 7],
+      backgroundColor: ['#1D9E75', '#EF9F27', '#D85A30']
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false
+      }
+    }
+  }
+});
+
+/* Graphic 7 - Future functionalities */
+new Chart(document.getElementById('c7'), {
+  type: 'bar',
+  data: {
+    labels: ['Searchability', 'Easy integration of images', 'Automatic metadata capture', 'Version control (Git-like)'],
+    datasets: [{
+      data: [74, 65, 60, 47],
+      backgroundColor: ['#534AB7', '#7F77DD', '#AFA9EC', '#CECBF6']
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false
+      }
+    }
+  }
+});
+
+</script>
+
+    <footer style="text-align:center; padding:20px; font-size:12px; opacity:0.6;">
+        The 21st Century Lab Notebook · Survey data collected 2026 · Sergi Casado Prieto
+    </footer>
+
+</body>
+
+
+</html>
