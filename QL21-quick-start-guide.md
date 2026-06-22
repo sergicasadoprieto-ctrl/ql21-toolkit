@@ -112,4 +112,4 @@ git push origin v1.0.0
 → Full guide: [D4 Best Practices Guide](./D4-best-practices-guide.md)
 
 ---
-*QL21 · IMB-CNM-CSIC / UAB · 2026 · CC-BY 4.0*
+*KM-TFG-QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & UAB*
