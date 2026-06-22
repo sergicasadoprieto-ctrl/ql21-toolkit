@@ -32,4 +32,4 @@ All tool logos displayed in the poster remain the property of their respective o
 
 ---
 
-*QL21 · IMB-CNM-CSIC / UAB · 2026*
+*KM-TFG-QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & UAB*
