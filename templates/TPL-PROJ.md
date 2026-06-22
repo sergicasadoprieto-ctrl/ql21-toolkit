@@ -120,4 +120,4 @@ Use this section at project closure or after a major milestone to record key qua
 
 ---
 
-*QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & Universitat Autònoma de Barcelona*
+*KM-TFG-QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & UAB*
