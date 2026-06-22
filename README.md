@@ -26,8 +26,16 @@ During the survey and literature review carried out for this project, one issue 
 ql21-toolkit/
 ├── README.md
 ├── LICENSE.md
-├── survey-insights.pdf
-├── poster-documentation-stack.png
+├── poster-ql21-documentation-stack.png
+├── survey-insights.md
+├── docs/
+│   ├── D4-best-practices-guide.pdf
+│   └── QL21-quick-start-guide.pdf
+├── manifests/
+│   ├── user-manifest-template.yaml
+│   ├── project-manifest-template.yaml
+│   ├── governance-manifest-template.yaml
+│   └── branding-manifest-template.yaml
 └── templates/
     ├── TPL-LOG.md
     ├── TPL-ZN.md
@@ -48,8 +56,10 @@ Full results in [survey-insights.md](survey-insights.md)
 
 ## How to use
 
-**Without Git:** Download ZIP above.
+**New to QL21?** Start with the [Quick Start Guide](docs/QL21-quick-start-guide.pdf).
+For the full documentation framework, see the [Guide of Best Practices](docs/D4-best-practices-guide.pdf).
 
+**Without Git:** Download ZIP above.
 **With Git:**
 ```bash
 git clone https://github.com/sergicasadoprieto-ctrl/ql21-toolkit.git
