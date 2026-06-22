@@ -57,4 +57,4 @@ links:
   external: []
 
 ---
-Generated with the QL21 Documentation Framework.
+*QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & Universitat Autònoma de Barcelona*
