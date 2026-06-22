@@ -26,8 +26,16 @@ During the survey and literature review carried out for this project, one issue 
 ql21-toolkit/
 ├── README.md
 ├── LICENSE.md
-├── survey-insights.pdf
-├── poster-documentation-stack.png
+├── poster-ql21-documentation-stack.png
+├── survey-insights.md
+├── docs/
+│   ├── D4-best-practices-guide.pdf
+│   └── QL21-quick-start-guide.pdf
+├── manifests/
+│   ├── user-manifest-template.yaml
+│   ├── project-manifest-template.yaml
+│   ├── governance-manifest-template.yaml
+│   └── branding-manifest-template.yaml
 └── templates/
     ├── TPL-LOG.md
     ├── TPL-ZN.md
