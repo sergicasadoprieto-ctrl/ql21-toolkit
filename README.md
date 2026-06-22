@@ -16,7 +16,7 @@
 
 During the survey and literature review carried out for this project, one issue appeared repeatedly: researchers often develop effective experimental workflows, but the documentation supporting those workflows is frequently incomplete or inconsistent.
 
-**QL21** addresses that gap with a practical, reusable documentation framework informed by a survey of 113 researchers at UAB Campus.
+QL21 addresses that gap with a practical, reusable documentation framework informed by a survey of 113 researchers at UAB Campus.
 
 ---
 
