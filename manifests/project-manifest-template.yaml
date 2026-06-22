@@ -1,0 +1,71 @@
+## TFG PROJECT MANIFEST
+## File: [project-id]-manifest-[version].yaml
+## Context: [Institution] / [Federation or scope]
+## Status: ACTIVE
+
+id: [project-id]
+version: 1.0
+type: ProjectManifest
+
+name: "[Full project name]"
+acronym: "[ACRONYM]"
+
+description: >
+  [What the project develops or produces.]
+  [Main focus areas.]
+  [What it explicitly does not include.]
+
+governance:
+  model: "[e.g. RACO / ECSS-M inspired | Agile | Academic supervision]"
+  statementOfWork: "[SOW document identifier]"   # omit if no formal SOW
+  scopeRule: "[One-line scope boundary rule]"
+  reviewGates:
+    - "[Gate 1, e.g. KOM]"
+    - "[Gate 2]"
+    - "[Gate 3]"
+
+contact:
+  supervisor: "[Supervisor name]"
+  institution: "[Host institution]"
+  email: "[supervisor@institution.org]"          # omit if not public
+
+participants:
+  student: "[Name]"                            # rename roles as needed
+  academicTutor: "[Name]"
+
+scope:
+  inScope:
+    - "[Item 1]"
+    - "[Item 2]"
+
+  outOfScope:
+    - "[Exclusion 1]"
+    - "[Exclusion 2]"
+
+environment:
+  host: "[Host institution and type, e.g. Research Centre]"
+  type: "[e.g. Methodological pilot | Software prototype | Field study]"
+  exclusions:
+    - "[Operational exclusion 1]"
+    - "[Operational exclusion 2]"               # omit block if no exclusions
+
+repositories:
+  git: "[https://github.com/org/repo]"          # omit if not applicable
+  docs: "[https://org.github.io/repo/]"         # omit if not applicable
+  # other: "[URL]"
+
+documentation:
+  format: "[e.g. Markdown + YAML frontmatter | LaTeX | Confluence]"
+  style: "[e.g. structured technical | narrative | academic]"
+  license: "[e.g. CC BY 4.0 | MIT | All rights reserved]"
+
+constraints:
+  confidentiality: "[e.g. Public | Internal | Restricted | Confidential]"
+  ipOwner: "[Entity]"
+  disclosure: "[e.g. Open | Requires authorization | Embargo until YYYY-MM-DD]"
+
+status:
+  phase: "[Current phase]"
+  maturity: "[e.g. Concept | Prototype | Stable | Archived]"
+
+# KM-TFG-QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & UAB · CC-BY 4.0

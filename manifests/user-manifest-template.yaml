@@ -1,0 +1,54 @@
+## File: [acronym]-profile-[version].yaml
+## Context: [Institution] 
+## Status: ACTIVE
+
+id: [firstname-lastname-profile]
+version: 1.0
+type: PersonProfile
+
+identity:
+  name: "[Full Name]"
+  acronym: "[INITIALS]"
+  role: "[Role in project]"
+
+affiliation:
+  institution: "[Host institution]"
+  university: "[University, if applicable]"
+  department: "[Department or unit]"
+
+contact:
+  email: "[email@domain.com]"
+  location: "[City, Country]"
+  timezone: "[Region/City]"  
+
+context:
+  currentProject: "[Project name or description]"
+  startDate: "YYYY-MM-DD"
+  endDate: "YYYY-MM-DD"            # omit if ongoing
+  supervisor: "[Supervisor name]"
+  academicTutor: "[Tutor name]"    # omit if not academic context
+
+knowledgeAreas:
+  - "[Area 1] ([level])"           # levels: Conceptual / Applied / Practical
+  - "[Area 2] ([level])"
+  # add as needed
+
+scope:
+  clearanceLevel: "[L0–L3]"        # L0=guest, L1=student, L2=staff, L3=PI
+  limitations:
+    - "[Access restriction 1]"
+    - "[Access restriction 2]"     # omit section if no limitations
+
+tools:
+  - "[Tool 1]"
+  - "[Tool 2]"  # add as need
+
+interfacePreferences:
+  style: "[e.g. structured, technical, concise]"
+  outputFormat: "[e.g. Markdown + YAML]"
+
+status:
+  phase: "[Current phase of project]"
+  reviewGate: "[Last completed gate, e.g. KOM / D1 / D2]"
+
+# KM-TFG-QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & UAB · CC-BY 4.0

@@ -1,0 +1,124 @@
+## =============================================================================
+## TFG GOVERNANCE MANIFEST
+## File: [project-id]-governance-manifest-[version].yaml
+## Context: [Institution] / [Scope]
+## Status: ACTIVE
+## Version: [MAJOR.MINOR]
+## Date: YYYY-MM-DD
+## Description: >
+##   Governance layer for [project name].
+##   Defines rules of scope, confidentiality, review process, and decision rights.
+## =============================================================================
+
+governance-manifest:
+
+  ## ---------------------------------------------------------------------------
+  ## 1. PROJECT CONTEXT
+  ## ---------------------------------------------------------------------------
+  project:
+    name: "[Full project name]"
+    acronym: "[ACRONYM]"
+    institution: "[Institution(s)]"
+    type: "[e.g. Methodological Research / Software Development / Operational]"
+    domain: "[e.g. Scientific Documentation / Data Engineering]"
+
+  ## ---------------------------------------------------------------------------
+  ## 2. GOVERNANCE MODEL
+  ## ---------------------------------------------------------------------------
+  model:
+    framework: "[Governance framework name or description]"
+    principle: "[One-line design principle]"
+    authorityHierarchy:
+      - level: 1
+        role: "[Top authority role]"
+        name: "[Name]"                  # omit if role-based only
+        authority: "[What they approve]"
+      - level: 2
+        role: "[Second authority role]"
+        name: "[Name]"
+        authority: "[What they approve]"
+      - level: 3
+        role: "[Executor role]"
+        name: "[Name]"
+        authority: "[Execution scope]" # add levels as needed
+      
+
+  ## ---------------------------------------------------------------------------
+  ## 3. SCOPE CONTROL
+  ## ---------------------------------------------------------------------------
+  scopeControl:
+    rule: "[Scope boundary rule, e.g. anything not in SOW is out of scope]"
+    enforcement: "[Strict | Flexible]"
+    expansionAllowed: [true | false]
+    exceptions: "[Condition under which expansion is permitted]"  # omit if expansionAllowed: false
+
+  ## ---------------------------------------------------------------------------
+  ## 4. CONFIDENTIALITY & IP
+  ## ---------------------------------------------------------------------------
+  confidentiality:
+    level: "[e.g. Public | Internal | Restricted | Confidential]"
+    rules:
+      - "[Restriction 1]"
+      - "[Restriction 2]"
+      # add as needed
+    intellectualProperty:
+      owner: "[Entity]"
+      usageRights: "[e.g. Academic use only | Open licence | Commercial restricted]"
+
+  ## ---------------------------------------------------------------------------
+  ## 5. REVIEW PROCESS
+  ## ---------------------------------------------------------------------------
+  reviewGates:
+    - name: "[Gate name, e.g. KOM]"
+      purpose: "[What this gate validates]"
+      outputsValidated: ["[Output 1]", "[Output 2]"]
+    - name: "[Gate name]"
+      purpose: "[Purpose]"
+      outputsValidated: ["[Output]"] # add gates as needed
+
+  ## ---------------------------------------------------------------------------
+  ## 6. DECISION RULES
+  ## ---------------------------------------------------------------------------
+  decisionRules:
+    documentationStandard: "[e.g. Markdown + YAML frontmatter]"
+    versionControl: "[e.g. Git mandatory | optional]"
+    singleSourceOfTruth: "[e.g. Repository main branch | SharePoint | Confluence]"
+    breakingChangesRequire: "[e.g. Supervisor approval | Team vote]"
+
+  ## ---------------------------------------------------------------------------
+  ## 7. DATA GOVERNANCE
+  ## ---------------------------------------------------------------------------
+  dataGovernance:
+    storage: "[e.g. Git repository only | Cloud storage | On-premise]"
+    externalTools: "[e.g. Allowed for non-sensitive processing | Prohibited]"
+    sensitiveDataHandling: "[e.g. Prohibited in repository | Encrypted only]"
+    personalData: "[e.g. Anonymised only | Not collected]"  # omit as needed
+
+  ## ---------------------------------------------------------------------------
+  ## 8. COMPLIANCE PRINCIPLES
+  ## ---------------------------------------------------------------------------
+  principles:
+    - "[Principle 1, e.g. FAIR alignment]"
+    - "[Principle 2]" # add as needed
+
+  ## ---------------------------------------------------------------------------
+  ## 9. CHANGE CONTROL
+  ## ---------------------------------------------------------------------------
+  changeControl:
+    versioning: "[e.g. Semantic (MAJOR.MINOR) | Date-based (YYYY-MM-DD)]"
+    approvalRequiredFor:
+      - "[Change type 1, e.g. scope changes]"
+      - "[Change type 2]"
+    logRequirement: "[Where and how changes must be documented]"
+
+  ## ---------------------------------------------------------------------------
+  ## 10. STATUS
+  ## ---------------------------------------------------------------------------
+  status:
+    phase: "[Current project phase]"
+    maturity: "[e.g. Draft | v1.0 baseline | Stable]"
+    reviewGate: "[Last approved gate and notes]"
+
+---
+
+# KM-TFG-QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & UAB · CC-BY 4.0

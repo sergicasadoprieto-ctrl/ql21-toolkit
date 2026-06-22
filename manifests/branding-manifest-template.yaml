@@ -1,0 +1,60 @@
+## TFG BRANDING MANIFEST
+## File: [project-id]-branding-manifest-[version].yaml
+## Context: [Institution] / [Federation or scope]
+## Status: ACTIVE
+
+id: [project-id]-branding
+version: 1.0
+type: BrandingManifest
+
+name: "[Full project or product name]"
+acronym: "[ACRONYM]"
+
+description: >
+  [Brief description of the visual identity system and its purpose.]
+
+palette:
+  primary: "#XXXXXX"
+  secondary: "#XXXXXX"
+  accent: "#XXXXXX"
+  error: "#XXXXXX"       # omit if not applicable
+  neutral:
+    dark: "#XXXXXX"
+    light: "#XXXXXX"
+    muted: "#XXXXXX"     # omit if not needed
+
+typography:
+  primary: "[Font name]"
+  code: "[Monospace font]"     # omit if no code content
+  fallback: ["[Font 1]", "[Font 2]", "sans-serif"]
+
+assets:
+  logo:
+    type: "[text-based | image | svg]"
+    value: "[Text string or file path]"
+    constraint: "[Any restriction, e.g. no institutional logos]"  # omit if none
+
+  favicon:
+    text: "[Short string, 2–3 chars]"    # omit if using image instead
+    # file: "[path/to/favicon.png]"      # alternative
+
+documentationStyle:
+  format: "[e.g. Markdown + YAML frontmatter]"
+  tone: "[e.g. structured, minimal, academic]"
+
+presentation:                  # omit entire block if no slide output
+  tool: "[e.g. Marp, Reveal.js, Beamer]"
+  theme: "[base theme name]"
+  aspectRatio: "[16:9 | 4:3]"
+  colors:
+    background: "#XXXXXX"
+    text: "#XXXXXX"
+    primary: "#XXXXXX"
+    accent: "#XXXXXX"          # omit if same as primary
+
+constraints:
+  # List what this identity explicitly avoids or prohibits
+  - "[e.g. No institutional logos]"
+  - "[e.g. No production-grade visual language]"
+
+# KM-TFG-QL21 · © 2026 Sergi Casado Prieto · IMB-CNM-CSIC & UAB · CC-BY 4.0
