@@ -8,7 +8,7 @@
 
 **Author:** Sergi Casado Prieto · IMB-CNM-CSIC / UAB · 2026
 
-**Full project:** https://github.com/sergicasadoprieto-ctrl/tfg-quadern-laboratori-21c
+**Full project:** https://github.com/sergicasadoprieto-ctrl/tfg-quadern-laboratori-21c *(private repository - accessible upon request)*
 
 ---
 
@@ -56,10 +56,13 @@ Full results in [survey-insights.md](survey-insights.md)
 
 ## How to use
 
-**New to QL21?** Start with the [Quick Start Guide](docs/QL21-quick-start-guide.pdf).
-For the full documentation framework, see the [Guide of Best Practices](docs/D4-best-practices-guide.pdf).
+**New to QL21?** 
 
-**Without Git:** Download ZIP above.
+- Start with the [Quick Start Guide](docs/QL21-quick-start-guide.pdf).  
+- For the full documentation framework, see the [Guide of Best Practices](docs/D4-best-practices-guide.pdf).
+
+**Without Git:** Download ZIP above.  
+
 **With Git:**
 ```bash
 git clone https://github.com/sergicasadoprieto-ctrl/ql21-toolkit.git
