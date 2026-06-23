@@ -18,6 +18,8 @@ During the survey and literature review carried out for this project, one issue 
 
 QL21 addresses that gap with a practical, reusable documentation framework informed by a survey of 113 researchers at UAB Campus.
 
+---
+
 ## Documentation site
 
 The QL21 toolkit is also available as a web page at:  
