@@ -1,4 +1,4 @@
-# 📓 QL21 Toolkit — The 21st Century Lab Notebook
+# 📓 QL21 Toolkit - The 21st Century Lab Notebook
 
 > QL21 was developed as part of a Bachelor's Thesis at IMB-CNM-CSIC and the Universitat Autònoma de Barcelona, motivated by the practical documentation challenges encountered in experimental research environments.
 
@@ -6,9 +6,11 @@
 ![Institution](https://img.shields.io/badge/IMB--CNM-CSIC-263238?style=flat-square)
 ![University](https://img.shields.io/badge/UAB-2026-263238?style=flat-square)
 
-**Author:** Sergi Casado Prieto · IMB-CNM-CSIC / UAB · 2026
+**Author:** Sergi Casado Prieto · IMB-CNM-CSIC / UAB · 2026  
+**Supervisor:** Esteve Farrés Berenguer · IMB-CNM-CSIC
 
-**Full project:** https://github.com/sergicasadoprieto-ctrl/tfg-quadern-laboratori-21c
+**Full project:** Private repository - accessible upon request.  
+Contact: sergicasadoprieto@gmail.com
 
 ---
 
@@ -63,12 +65,15 @@ Full results in [survey-insights.md](survey-insights.md)
 
 ## How to use
 
-**New to QL21?**   
-Start with the [Quick Start Guide](docs/QL21-quick-start-guide.pdf).  
-For the full documentation framework, see the [Guide of Best Practices](docs/D4-best-practices-guide.pdf).
+| I am... | Start here |
+|---------|------------|
+| New to all of this | [Quick Start Guide](docs/QL21-quick-start-guide.pdf) |
+| Familiar with Git | Clone and read the [D4 Guide](docs/D4-best-practices-guide.pdf) |
+| Looking for templates only | `templates/` folder |
 
 **Without Git:** Download ZIP above.  
-**With Git:**
+
+**With Git:**  
 ```bash
 git clone https://github.com/sergicasadoprieto-ctrl/ql21-toolkit.git
 ```
